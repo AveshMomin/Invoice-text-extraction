@@ -3,7 +3,7 @@ from PIL import Image
 import pytesseract
 import datetime
 
-pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR/tesseract.exe' 
+
 def textfromimage(image):
     with Image.open(image) as img:
         img = img.convert('L')
