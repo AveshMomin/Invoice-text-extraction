@@ -24,7 +24,6 @@ def main():
     scheduled_time = datetime.datetime.combine(datetime.date.today(),extraction_time)
     st.header("Scheduled Time")
     st.text(scheduled_time)
-    # if scheduled_time == datetime.datetime.now():
        
 
 if __name__ == '__main__':
