@@ -1,13 +1,13 @@
 import streamlit as st
 from PIL import Image
-from tesserocr import PyTessBaseAPI
+import pytesseract
 import datetime
 
-
+pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR'
 def textfromimage(image):
     with Image.open(image) as img:
         img = img.convert('L')
-        extracted_text = tesserocr.image_to_text(img)
+        extracted_text = pytesseract.image_to_string(img)
     return extracted_text
 
 def main():

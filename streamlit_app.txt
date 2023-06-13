@@ -1,3 +1,3 @@
 streamlit
-tesserocr
+pytesseract==<0.3.10>
 pillow
